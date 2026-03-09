@@ -134,4 +134,41 @@ router.post('/:definitions_id/UpdateRecordById/:record_id', authMiddleware, asyn
     }
 });
 
+// =========================================================
+// POST /api/Sensors/:definitions_id/DeleteRecordById/:record_id  [JWT BẢO VỆ]
+// Xóa một record cụ thể thuộc definition_id
+// =========================================================
+router.post('/:definitions_id/DeleteRecordById/:record_id', authMiddleware, async (req, res) => {
+    try {
+        const { definitions_id, record_id } = req.params;
+
+        // Kiểm tra definition tồn tại
+        const definition = await Definition.findById(definitions_id);
+        if (!definition) {
+            return res.status(404).json({ success: false, message: `Không tìm thấy definition với id: ${definitions_id}` });
+        }
+
+        // Tìm và xóa record (chỉ xóa record thuộc đúng definition)
+        const deletedRecord = await Record.findOneAndDelete({
+            _id: record_id,
+            definitionId: definitions_id,
+        });
+
+        if (!deletedRecord) {
+            return res.status(404).json({
+                success: false,
+                message: `Không tìm thấy record id: ${record_id} thuộc definition: ${definitions_id}`,
+            });
+        }
+
+        res.json({
+            success: true,
+            message: 'Đã xóa record thành công.',
+            data: deletedRecord,
+        });
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Lỗi server', error: error.message });
+    }
+});
+
 export default router;

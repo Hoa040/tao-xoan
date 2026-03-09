@@ -313,3 +313,22 @@
 .btn-edit:hover {
     background: #dbeafe;
 }
+
+.btn-delete-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #fff1f2;
+    color: #e11d48;
+    border: 1px solid #fda4af;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-delete-row:hover {
+    background: #ffe4e6;
+}

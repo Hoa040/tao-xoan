@@ -71,6 +71,26 @@ function DefinitionsPage({ token }) {
         }
     };
 
+    // Xóa 1 record duy nhất (cần JWT)
+    const deleteRecord = async (defId, recordId) => {
+        if (!window.confirm('Bạn có chắc chắn muốn xóa bản ghi này?')) return;
+
+        const res = await fetch(`${API}/${defId}/DeleteRecordById/${recordId}`, {
+            method: 'POST',
+            headers: authHeaders,
+        });
+        const data = await res.json();
+        if (data.success) {
+            // Cập nhật lại state records tại chỗ bằng cách lọc bỏ record đã xóa
+            setRecords(prev => ({
+                ...prev,
+                [defId]: prev[defId].filter(r => r._id !== recordId),
+            }));
+        } else {
+            alert('❌ ' + data.message);
+        }
+    };
+
     if (loading) return (
         <div className="loader-container"><div className="loader"></div><p>Đang tải dữ liệu...</p></div>
     );
@@ -183,9 +203,14 @@ function DefinitionsPage({ token }) {
                                                                     <button className="btn-cancel" onClick={() => setEditingRecord(null)}><X size={16} /></button>
                                                                 </div>
                                                             ) : (
-                                                                <button className="btn-edit" onClick={() => { setEditingRecord(r._id); setEditValue(r.value ?? ''); }}>
-                                                                    <Edit3 size={15} /> Sửa
-                                                                </button>
+                                                                <div className="action-btns">
+                                                                    <button className="btn-edit" onClick={() => { setEditingRecord(r._id); setEditValue(r.value ?? ''); }}>
+                                                                        <Edit3 size={15} /> Sửa
+                                                                    </button>
+                                                                    <button className="btn-delete-row" onClick={() => deleteRecord(def._id, r._id)}>
+                                                                        <Trash2 size={15} /> Xóa
+                                                                    </button>
+                                                                </div>
                                                             )}
                                                         </td>
                                                     )}
