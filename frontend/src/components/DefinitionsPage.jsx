@@ -12,6 +12,8 @@ function DefinitionsPage({ token }) {
     const [editingRecord, setEditingRecord] = useState(null);   // { id, field, value }
     const [editValue, setEditValue] = useState('');
     const [confirmDelete, setConfirmDelete] = useState(null);   // definition._id
+    const [showAddForm, setShowAddForm] = useState(null);       // definition._id
+    const [newValue, setNewValue] = useState('');
 
     const authHeaders = token ? { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' } : {};
 
@@ -91,6 +93,32 @@ function DefinitionsPage({ token }) {
         }
     };
 
+    // Tạo mới một record (cần JWT)
+    const createRecord = async (defId) => {
+        if (!newValue || isNaN(parseFloat(newValue))) {
+            alert('Vui lòng nhập giá trị hợp lệ.');
+            return;
+        }
+
+        const res = await fetch(`${API}/${defId}/CreateRecord`, {
+            method: 'POST',
+            headers: authHeaders,
+            body: JSON.stringify({ value: parseFloat(newValue) }),
+        });
+        const data = await res.json();
+        if (data.success) {
+            // Thêm record mới vào đầu danh sách
+            setRecords(prev => ({
+                ...prev,
+                [defId]: [data.data, ...(prev[defId] || [])],
+            }));
+            setNewValue('');
+            setShowAddForm(null);
+        } else {
+            alert('❌ ' + data.message);
+        }
+    };
+
     if (loading) return (
         <div className="loader-container"><div className="loader"></div><p>Đang tải dữ liệu...</p></div>
     );
@@ -142,7 +170,26 @@ function DefinitionsPage({ token }) {
                                         <PlusCircle size={16} /> {(records[def._id] || []).length} bản ghi
                                     </span>
                                     {token && (
-                                        <>
+                                        <div className="toolbar-actions">
+                                            {showAddForm === def._id ? (
+                                                <div className="add-record-form">
+                                                    <input
+                                                        type="number"
+                                                        step="0.01"
+                                                        placeholder="Giá trị mới..."
+                                                        value={newValue}
+                                                        onChange={e => setNewValue(e.target.value)}
+                                                        autoFocus
+                                                    />
+                                                    <button className="btn-save" onClick={() => createRecord(def._id)}><Check size={16} /></button>
+                                                    <button className="btn-cancel" onClick={() => { setShowAddForm(null); setNewValue(''); }}><X size={16} /></button>
+                                                </div>
+                                            ) : (
+                                                <button className="btn-add-record" onClick={() => setShowAddForm(def._id)}>
+                                                    <PlusCircle size={16} /> Thêm bản ghi
+                                                </button>
+                                            )}
+
                                             {confirmDelete === def._id ? (
                                                 <div className="confirm-delete">
                                                     <span>Xác nhận xóa tất cả?</span>
@@ -154,7 +201,7 @@ function DefinitionsPage({ token }) {
                                                     <Trash2 size={16} /> Xóa tất cả Records
                                                 </button>
                                             )}
-                                        </>
+                                        </div>
                                     )}
                                 </div>
 

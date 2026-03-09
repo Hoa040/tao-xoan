@@ -92,6 +92,44 @@ router.post('/:definitions_id/DeleteRecords', authMiddleware, async (req, res) =
 });
 
 // =========================================================
+// POST /api/Sensors/:definitions_id/CreateRecord  [JWT BẢO VỆ]
+// Tạo mới một record cho definition_id
+// =========================================================
+router.post('/:definitions_id/CreateRecord', authMiddleware, async (req, res) => {
+    try {
+        const { definitions_id } = req.params;
+        const { value, data } = req.body;
+
+        if (value === undefined || value === null) {
+            return res.status(400).json({ success: false, message: 'Vui lòng cung cấp giá trị (value).' });
+        }
+
+        // Kiểm tra definition tồn tại
+        const definition = await Definition.findById(definitions_id);
+        if (!definition) {
+            return res.status(404).json({ success: false, message: `Không tìm thấy definition với id: ${definitions_id}` });
+        }
+
+        const newRecord = new Record({
+            definitionId: definitions_id,
+            value,
+            data,
+            recordedAt: new Date(),
+        });
+
+        await newRecord.save();
+
+        res.status(201).json({
+            success: true,
+            message: 'Tạo record mới thành công.',
+            data: newRecord,
+        });
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Lỗi server', error: error.message });
+    }
+});
+
+// =========================================================
 // POST /api/Sensors/:definitions_id/UpdateRecordById/:record_id  [JWT BẢO VỆ]
 // Cập nhật thông tin của một record cụ thể (bất kỳ trường nào)
 // =========================================================
