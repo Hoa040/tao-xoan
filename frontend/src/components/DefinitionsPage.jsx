@@ -31,11 +31,11 @@ function DefinitionsPage({ token }) {
     const toggleExpand = async (defId) => {
         if (expandedId === defId) { setExpandedId(null); return; }
         setExpandedId(defId);
-        if (!records[defId]) {
-            const res = await fetch(`${API}/${defId}/GetAllRecords`);
-            const data = await res.json();
-            setRecords(prev => ({ ...prev, [defId]: data.data || [] }));
-        }
+        
+        // Luôn fetch lại dữ liệu mới nhất khi chuyển đổi hoặc mở lại
+        const res = await fetch(`${API}/${defId}/GetAllRecords`);
+        const data = await res.json();
+        setRecords(prev => ({ ...prev, [defId]: data.data || [] }));
     };
 
     // Xóa tất cả records của definition (cần JWT)
@@ -124,152 +124,184 @@ function DefinitionsPage({ token }) {
     );
 
     return (
-        <div className="definitions-page">
-            <div className="section-header">
-                <h2><Database size={22} /> Quản lý Cấu trúc Cảm biến (Definitions)</h2>
-                <p>Xem và quản lý toàn bộ cấu trúc định nghĩa cảm biến và các dữ liệu ghi nhận liên quan.</p>
-            </div>
-
-            {!token && (
-                <div className="no-auth-banner">
-                    <Activity size={18} />
-                    Bạn đang ở chế độ xem. <strong>Đăng nhập Admin</strong> để sử dụng chức năng Xóa và Cập nhật dữ liệu.
+        <div className="definitions-container">
+            {/* Sidebar: Danh sách các Definition */}
+            <div className="def-sidebar">
+                <div className="sidebar-header">
+                    <h3><Database size={18} /> Cảm biến</h3>
+                    <span className="count-badge">{definitions.length}</span>
                 </div>
-            )}
-
-            <div className="definitions-list">
-                {definitions.map(def => (
-                    <div key={def._id} className={`def-card ${expandedId === def._id ? 'expanded' : ''}`}>
-                        {/* Header của từng definition */}
-                        <div className="def-header" onClick={() => toggleExpand(def._id)}>
-                            <div className="def-info">
-                                <div className="def-title-row">
-                                    <h3>{def.name}</h3>
-                                    {def.isActive
-                                        ? <span className="badge active-badge">● ACTIVE</span>
-                                        : <span className="badge inactive-badge">○ Không hoạt động</span>
-                                    }
-                                </div>
-                                <p className="def-desc">{def.description}</p>
-                                <div className="sensor-tags">
-                                    {(def.sensorList || []).map(s => (
-                                        <span key={s} className="sensor-tag">{s}</span>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="def-expand-icon">
-                                {expandedId === def._id ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                <div className="sidebar-list">
+                    {definitions.map(def => (
+                        <div
+                            key={def._id}
+                            className={`sidebar-item ${expandedId === def._id ? 'active' : ''}`}
+                            onClick={() => toggleExpand(def._id)}
+                        >
+                            <div className="item-dot" style={{ backgroundColor: def.isActive ? '#10b981' : '#9ca3af' }}></div>
+                            <div className="item-info">
+                                <span className="item-name">{def.name}</span>
+                                <span className="item-sub">{def.sensorList?.length || 0} cảm biến</span>
                             </div>
                         </div>
+                    ))}
+                </div>
+            </div>
 
-                        {/* Danh sách Records khi mở rộng */}
-                        {expandedId === def._id && (
-                            <div className="def-records">
-                                <div className="records-toolbar">
-                                    <span className="records-count">
-                                        <PlusCircle size={16} /> {(records[def._id] || []).length} bản ghi
-                                    </span>
-                                    {token && (
-                                        <div className="toolbar-actions">
-                                            {showAddForm === def._id ? (
-                                                <div className="add-record-form">
-                                                    <input
-                                                        type="number"
-                                                        step="0.01"
-                                                        placeholder="Giá trị mới..."
-                                                        value={newValue}
-                                                        onChange={e => setNewValue(e.target.value)}
-                                                        autoFocus
-                                                    />
-                                                    <button className="btn-save" onClick={() => createRecord(def._id)}><Check size={16} /></button>
-                                                    <button className="btn-cancel" onClick={() => { setShowAddForm(null); setNewValue(''); }}><X size={16} /></button>
-                                                </div>
+            {/* Main Content: Chi tiết và Records */}
+            <div className="def-main-content">
+                {expandedId ? (
+                    (() => {
+                        const def = definitions.find(d => d._id === expandedId);
+                        if (!def) return null;
+                        return (
+                            <div className="detail-view">
+                                <div className="detail-header">
+                                    <div className="header-title">
+                                        <div className="title-row">
+                                            <h2>{def.name}</h2>
+                                            {def.isActive ? (
+                                                <span className="status-pill active">Đang hoạt động</span>
                                             ) : (
-                                                <button className="btn-add-record" onClick={() => setShowAddForm(def._id)}>
-                                                    <PlusCircle size={16} /> Thêm bản ghi
-                                                </button>
+                                                <span className="status-pill inactive">Ngừng nhận tin</span>
                                             )}
-
-                                            {confirmDelete === def._id ? (
-                                                <div className="confirm-delete">
-                                                    <span>Xác nhận xóa tất cả?</span>
-                                                    <button className="btn-confirm-yes" onClick={() => deleteAllRecords(def._id)}>Xóa</button>
-                                                    <button className="btn-confirm-no" onClick={() => setConfirmDelete(null)}>Hủy</button>
-                                                </div>
-                                            ) : (
-                                                <button className="btn-delete-all" onClick={() => setConfirmDelete(def._id)}>
-                                                    <Trash2 size={16} /> Xóa tất cả Records
-                                                </button>
-                                            )}
+                                        </div>
+                                        <p className="description">{def.description}</p>
+                                        <div className="tag-cloud">
+                                            {(def.sensorList || []).map(s => (
+                                                <span key={s} className="tag-item">{s}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    
+                                    {!token && (
+                                        <div className="mini-auth-alert">
+                                            <Activity size={14} /> Chế độ xem (Đăng nhập để quản lý)
                                         </div>
                                     )}
                                 </div>
 
-                                {(records[def._id] || []).length === 0 ? (
-                                    <p className="no-records">Không có dữ liệu ghi nhận nào.</p>
-                                ) : (
-                                    <table className="records-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Thời gian</th>
-                                                <th>Giá trị (value)</th>
-                                                <th>Dữ liệu phụ (data)</th>
-                                                {token && <th>Thao tác</th>}
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {(records[def._id] || []).map(r => (
-                                                <tr key={r._id}>
-                                                    <td className="td-time-small">
-                                                        {new Date(r.recordedAt).toLocaleString('vi-VN')}
-                                                    </td>
-                                                    <td>
-                                                        {editingRecord === r._id ? (
-                                                            <input
-                                                                className="inline-edit-input"
-                                                                type="number"
-                                                                step="0.01"
-                                                                value={editValue}
-                                                                onChange={e => setEditValue(e.target.value)}
-                                                                autoFocus
-                                                            />
-                                                        ) : (
-                                                            <span className="value-display">{r.value ?? '—'}</span>
-                                                        )}
-                                                    </td>
-                                                    <td className="td-data">
-                                                        {r.data ? (
-                                                            <code>{JSON.stringify(r.data)}</code>
-                                                        ) : '—'}
-                                                    </td>
-                                                    {token && (
-                                                        <td>
-                                                            {editingRecord === r._id ? (
-                                                                <div className="action-btns">
-                                                                    <button className="btn-save" onClick={() => saveRecord(def._id, r._id)}><Check size={16} /></button>
-                                                                    <button className="btn-cancel" onClick={() => setEditingRecord(null)}><X size={16} /></button>
-                                                                </div>
-                                                            ) : (
-                                                                <div className="action-btns">
-                                                                    <button className="btn-edit" onClick={() => { setEditingRecord(r._id); setEditValue(r.value ?? ''); }}>
-                                                                        <Edit3 size={15} /> Sửa
-                                                                    </button>
-                                                                    <button className="btn-delete-row" onClick={() => deleteRecord(def._id, r._id)}>
-                                                                        <Trash2 size={15} /> Xóa
-                                                                    </button>
-                                                                </div>
+                                <div className="detail-body">
+                                    <div className="records-section-header">
+                                        <div className="records-info">
+                                            <Activity size={18} className="icon-pulse" />
+                                            <h3>Lịch sử dữ liệu</h3>
+                                            <span className="records-badge">{(records[def._id] || []).length} bản ghi</span>
+                                        </div>
+
+                                        {token && (
+                                            <div className="header-actions">
+                                                {showAddForm === def._id ? (
+                                                    <div className="inline-add-form">
+                                                        <input
+                                                            type="number"
+                                                            step="0.01"
+                                                            placeholder="Giá trị..."
+                                                            value={newValue}
+                                                            onChange={e => setNewValue(e.target.value)}
+                                                            autoFocus
+                                                        />
+                                                        <button className="btn-confirm-add" onClick={() => createRecord(def._id)} title="Lưu"><Check size={18} /></button>
+                                                        <button className="btn-close-add" onClick={() => { setShowAddForm(null); setNewValue(''); }} title="Đóng"><X size={18} /></button>
+                                                    </div>
+                                                ) : (
+                                                    <button className="btn-trigger-add" onClick={() => setShowAddForm(def._id)}>
+                                                        <PlusCircle size={16} /> Thêm dữ liệu
+                                                    </button>
+                                                )}
+
+                                                {confirmDelete === def._id ? (
+                                                    <div className="confirm-all-box">
+                                                        <span>Xóa sạch?</span>
+                                                        <button className="btn-yes" onClick={() => deleteAllRecords(def._id)}>Có</button>
+                                                        <button className="btn-no" onClick={() => setConfirmDelete(null)}>Không</button>
+                                                    </div>
+                                                ) : (
+                                                    <button className="btn-trigger-delete" onClick={() => setConfirmDelete(def._id)}>
+                                                        <Trash2 size={16} /> Xóa hết
+                                                    </button>
+                                                )}
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    <div className="table-container">
+                                        {(records[def._id] || []).length === 0 ? (
+                                            <div className="empty-state">
+                                                <PlusCircle size={40} />
+                                                <p>Chưa có bản ghi nào cho cấu trúc này.</p>
+                                            </div>
+                                        ) : (
+                                            <table className="modern-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Thời gian ghi nhận</th>
+                                                        <th>Giá trị đo</th>
+                                                        <th>Dữ liệu JSON</th>
+                                                        {token && <th className="text-right">Thao tác</th>}
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {(records[def._id] || []).map(r => (
+                                                        <tr key={r._id}>
+                                                            <td className="col-time">
+                                                                {new Date(r.recordedAt).toLocaleString('vi-VN')}
+                                                            </td>
+                                                            <td className="col-value">
+                                                                {editingRecord === r._id ? (
+                                                                    <input
+                                                                        className="table-edit-input"
+                                                                        type="number"
+                                                                        step="0.01"
+                                                                        value={editValue}
+                                                                        onChange={e => setEditValue(e.target.value)}
+                                                                        autoFocus
+                                                                    />
+                                                                ) : (
+                                                                    <span className="val-text">{r.value ?? '0'}</span>
+                                                                )}
+                                                            </td>
+                                                            <td className="col-data">
+                                                                {r.data ? (
+                                                                    <pre className="json-preview">{JSON.stringify(r.data)}</pre>
+                                                                ) : <span className="null-text">null</span>}
+                                                            </td>
+                                                            {token && (
+                                                                <td className="col-actions text-right">
+                                                                    {editingRecord === r._id ? (
+                                                                        <div className="row-action-btns">
+                                                                            <button className="row-btn save" onClick={() => saveRecord(def._id, r._id)}><Check size={14} /></button>
+                                                                            <button className="row-btn cancel" onClick={() => setEditingRecord(null)}><X size={14} /></button>
+                                                                        </div>
+                                                                    ) : (
+                                                                        <div className="row-action-btns">
+                                                                            <button className="row-btn edit" onClick={() => { setEditingRecord(r._id); setEditValue(r.value ?? ''); }}>
+                                                                                <Edit3 size={14} />
+                                                                            </button>
+                                                                            <button className="row-btn delete" onClick={() => deleteRecord(def._id, r._id)}>
+                                                                                <Trash2 size={14} />
+                                                                            </button>
+                                                                        </div>
+                                                                    )}
+                                                                </td>
                                                             )}
-                                                        </td>
-                                                    )}
-                                                </tr>
-                                            ))}
-                                        </tbody>
-                                    </table>
-                                )}
+                                                        </tr>
+                                                    ))}
+                                                </tbody>
+                                            </table>
+                                        )}
+                                    </div>
+                                </div>
                             </div>
-                        )}
+                        );
+                    })()
+                ) : (
+                    <div className="welcome-state">
+                        <Database size={60} strokeWidth={1} />
+                        <h2>Quản lý Cấu trúc Dữ liệu</h2>
+                        <p>Vui lòng chọn một định nghĩa cảm biến từ danh sách bên trái để xem chi tiết và lịch sử dữ liệu.</p>
                     </div>
-                ))}
+                )}
             </div>
         </div>
     );

@@ -1,0 +1,2802 @@
+[
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.92
+        },
+        {
+          "key": "pH",
+          "value": 0.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 5.4
+        },
+        {
+          "key": "light_lux",
+          "value": 58513
+        },
+        {
+          "key": "EC_uS",
+          "value": 2286
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.21
+        },
+        {
+          "key": "pH",
+          "value": 9.5
+        },
+        {
+          "key": "temperature_C",
+          "value": 107.2
+        },
+        {
+          "key": "light_lux",
+          "value": 22790
+        },
+        {
+          "key": "EC_uS",
+          "value": 9674
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.27
+        },
+        {
+          "key": "pH",
+          "value": 0.4
+        },
+        {
+          "key": "temperature_C",
+          "value": -3.9
+        },
+        {
+          "key": "light_lux",
+          "value": 132475
+        },
+        {
+          "key": "EC_uS",
+          "value": 9863
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.08
+        },
+        {
+          "key": "pH",
+          "value": 2.8
+        },
+        {
+          "key": "temperature_C",
+          "value": 67.2
+        },
+        {
+          "key": "light_lux",
+          "value": 142853
+        },
+        {
+          "key": "EC_uS",
+          "value": 6873
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.66
+        },
+        {
+          "key": "pH",
+          "value": 8.2
+        },
+        {
+          "key": "temperature_C",
+          "value": 93.6
+        },
+        {
+          "key": "light_lux",
+          "value": 1703
+        },
+        {
+          "key": "EC_uS",
+          "value": 2615
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.09
+        },
+        {
+          "key": "pH",
+          "value": 4.8
+        },
+        {
+          "key": "temperature_C",
+          "value": -14.3
+        },
+        {
+          "key": "light_lux",
+          "value": 88236
+        },
+        {
+          "key": "EC_uS",
+          "value": 1674
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.28
+        },
+        {
+          "key": "pH",
+          "value": 1.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 99.8
+        },
+        {
+          "key": "light_lux",
+          "value": 158263
+        },
+        {
+          "key": "EC_uS",
+          "value": 4333
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.42
+        },
+        {
+          "key": "pH",
+          "value": 10.2
+        },
+        {
+          "key": "temperature_C",
+          "value": 48.5
+        },
+        {
+          "key": "light_lux",
+          "value": 99230
+        },
+        {
+          "key": "EC_uS",
+          "value": 1291
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.66
+        },
+        {
+          "key": "pH",
+          "value": 11.6
+        },
+        {
+          "key": "temperature_C",
+          "value": 62.1
+        },
+        {
+          "key": "light_lux",
+          "value": 94800
+        },
+        {
+          "key": "EC_uS",
+          "value": 9459
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.58
+        },
+        {
+          "key": "pH",
+          "value": 1.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 69.1
+        },
+        {
+          "key": "light_lux",
+          "value": 75861
+        },
+        {
+          "key": "EC_uS",
+          "value": 1307
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.57
+        },
+        {
+          "key": "pH",
+          "value": 12.1
+        },
+        {
+          "key": "temperature_C",
+          "value": 22.7
+        },
+        {
+          "key": "light_lux",
+          "value": 118858
+        },
+        {
+          "key": "EC_uS",
+          "value": 5977
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.49
+        },
+        {
+          "key": "pH",
+          "value": 5.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 70.6
+        },
+        {
+          "key": "light_lux",
+          "value": 183977
+        },
+        {
+          "key": "EC_uS",
+          "value": 1169
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.83
+        },
+        {
+          "key": "pH",
+          "value": 2.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 80.3
+        },
+        {
+          "key": "light_lux",
+          "value": 42834
+        },
+        {
+          "key": "EC_uS",
+          "value": 7573
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.14
+        },
+        {
+          "key": "pH",
+          "value": 13.9
+        },
+        {
+          "key": "temperature_C",
+          "value": 65.6
+        },
+        {
+          "key": "light_lux",
+          "value": 146001
+        },
+        {
+          "key": "EC_uS",
+          "value": 3598
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.05
+        },
+        {
+          "key": "pH",
+          "value": 11.8
+        },
+        {
+          "key": "temperature_C",
+          "value": 88.0
+        },
+        {
+          "key": "light_lux",
+          "value": 60043
+        },
+        {
+          "key": "EC_uS",
+          "value": 525
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.42
+        },
+        {
+          "key": "pH",
+          "value": 5.6
+        },
+        {
+          "key": "temperature_C",
+          "value": -29.1
+        },
+        {
+          "key": "light_lux",
+          "value": 148682
+        },
+        {
+          "key": "EC_uS",
+          "value": 5155
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.64
+        },
+        {
+          "key": "pH",
+          "value": 7.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 106.0
+        },
+        {
+          "key": "light_lux",
+          "value": 168519
+        },
+        {
+          "key": "EC_uS",
+          "value": 7517
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.43
+        },
+        {
+          "key": "pH",
+          "value": 2.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 82.9
+        },
+        {
+          "key": "light_lux",
+          "value": 141289
+        },
+        {
+          "key": "EC_uS",
+          "value": 4304
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.24
+        },
+        {
+          "key": "pH",
+          "value": 6.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 56.3
+        },
+        {
+          "key": "light_lux",
+          "value": 94895
+        },
+        {
+          "key": "EC_uS",
+          "value": 3593
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.99
+        },
+        {
+          "key": "pH",
+          "value": 1.9
+        },
+        {
+          "key": "temperature_C",
+          "value": 41.4
+        },
+        {
+          "key": "light_lux",
+          "value": 198123
+        },
+        {
+          "key": "EC_uS",
+          "value": 771
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.58
+        },
+        {
+          "key": "pH",
+          "value": 2.1
+        },
+        {
+          "key": "temperature_C",
+          "value": -13.6
+        },
+        {
+          "key": "light_lux",
+          "value": 178384
+        },
+        {
+          "key": "EC_uS",
+          "value": 6916
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.79
+        },
+        {
+          "key": "pH",
+          "value": 5.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 58.3
+        },
+        {
+          "key": "light_lux",
+          "value": 122696
+        },
+        {
+          "key": "EC_uS",
+          "value": 8669
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.75
+        },
+        {
+          "key": "pH",
+          "value": 7.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 115.5
+        },
+        {
+          "key": "light_lux",
+          "value": 178332
+        },
+        {
+          "key": "EC_uS",
+          "value": 1876
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.05
+        },
+        {
+          "key": "pH",
+          "value": 7.5
+        },
+        {
+          "key": "temperature_C",
+          "value": 4.0
+        },
+        {
+          "key": "light_lux",
+          "value": 168024
+        },
+        {
+          "key": "EC_uS",
+          "value": 5573
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.33
+        },
+        {
+          "key": "pH",
+          "value": 6.1
+        },
+        {
+          "key": "temperature_C",
+          "value": 34.9
+        },
+        {
+          "key": "light_lux",
+          "value": 189292
+        },
+        {
+          "key": "EC_uS",
+          "value": 4315
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.92
+        },
+        {
+          "key": "pH",
+          "value": 10.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 43.8
+        },
+        {
+          "key": "light_lux",
+          "value": 27894
+        },
+        {
+          "key": "EC_uS",
+          "value": 4889
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.53
+        },
+        {
+          "key": "pH",
+          "value": 7.1
+        },
+        {
+          "key": "temperature_C",
+          "value": -7.2
+        },
+        {
+          "key": "light_lux",
+          "value": 98019
+        },
+        {
+          "key": "EC_uS",
+          "value": 2646
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.62
+        },
+        {
+          "key": "pH",
+          "value": 10.9
+        },
+        {
+          "key": "temperature_C",
+          "value": 47.5
+        },
+        {
+          "key": "light_lux",
+          "value": 149
+        },
+        {
+          "key": "EC_uS",
+          "value": 9813
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.97
+        },
+        {
+          "key": "pH",
+          "value": 0.3
+        },
+        {
+          "key": "temperature_C",
+          "value": 113.3
+        },
+        {
+          "key": "light_lux",
+          "value": 80612
+        },
+        {
+          "key": "EC_uS",
+          "value": 3923
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.17
+        },
+        {
+          "key": "pH",
+          "value": 12.3
+        },
+        {
+          "key": "temperature_C",
+          "value": 116.2
+        },
+        {
+          "key": "light_lux",
+          "value": 22453
+        },
+        {
+          "key": "EC_uS",
+          "value": 7962
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.45
+        },
+        {
+          "key": "pH",
+          "value": 13.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 47.9
+        },
+        {
+          "key": "light_lux",
+          "value": 32967
+        },
+        {
+          "key": "EC_uS",
+          "value": 2103
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.98
+        },
+        {
+          "key": "pH",
+          "value": 13.3
+        },
+        {
+          "key": "temperature_C",
+          "value": -12.8
+        },
+        {
+          "key": "light_lux",
+          "value": 138326
+        },
+        {
+          "key": "EC_uS",
+          "value": 9938
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.27
+        },
+        {
+          "key": "pH",
+          "value": 3.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 49.0
+        },
+        {
+          "key": "light_lux",
+          "value": 191347
+        },
+        {
+          "key": "EC_uS",
+          "value": 3295
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.14
+        },
+        {
+          "key": "pH",
+          "value": 5.6
+        },
+        {
+          "key": "temperature_C",
+          "value": 70.8
+        },
+        {
+          "key": "light_lux",
+          "value": 97889
+        },
+        {
+          "key": "EC_uS",
+          "value": 7177
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.7
+        },
+        {
+          "key": "pH",
+          "value": 6.3
+        },
+        {
+          "key": "temperature_C",
+          "value": 0.9
+        },
+        {
+          "key": "light_lux",
+          "value": 16784
+        },
+        {
+          "key": "EC_uS",
+          "value": 5539
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.06
+        },
+        {
+          "key": "pH",
+          "value": 7.8
+        },
+        {
+          "key": "temperature_C",
+          "value": 57.1
+        },
+        {
+          "key": "light_lux",
+          "value": 1885
+        },
+        {
+          "key": "EC_uS",
+          "value": 1163
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.12
+        },
+        {
+          "key": "pH",
+          "value": 0.8
+        },
+        {
+          "key": "temperature_C",
+          "value": -28.9
+        },
+        {
+          "key": "light_lux",
+          "value": 8234
+        },
+        {
+          "key": "EC_uS",
+          "value": 5413
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.21
+        },
+        {
+          "key": "pH",
+          "value": 3.3
+        },
+        {
+          "key": "temperature_C",
+          "value": 70.4
+        },
+        {
+          "key": "light_lux",
+          "value": 56160
+        },
+        {
+          "key": "EC_uS",
+          "value": 8834
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.4
+        },
+        {
+          "key": "pH",
+          "value": 13.1
+        },
+        {
+          "key": "temperature_C",
+          "value": 54.2
+        },
+        {
+          "key": "light_lux",
+          "value": 123907
+        },
+        {
+          "key": "EC_uS",
+          "value": 3981
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.35
+        },
+        {
+          "key": "pH",
+          "value": 11.3
+        },
+        {
+          "key": "temperature_C",
+          "value": -8.6
+        },
+        {
+          "key": "light_lux",
+          "value": 25409
+        },
+        {
+          "key": "EC_uS",
+          "value": 7062
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.06
+        },
+        {
+          "key": "pH",
+          "value": 5.8
+        },
+        {
+          "key": "temperature_C",
+          "value": 102.5
+        },
+        {
+          "key": "light_lux",
+          "value": 14200
+        },
+        {
+          "key": "EC_uS",
+          "value": 1612
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.18
+        },
+        {
+          "key": "pH",
+          "value": 10.2
+        },
+        {
+          "key": "temperature_C",
+          "value": 92.1
+        },
+        {
+          "key": "light_lux",
+          "value": 28644
+        },
+        {
+          "key": "EC_uS",
+          "value": 4073
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.57
+        },
+        {
+          "key": "pH",
+          "value": 7.5
+        },
+        {
+          "key": "temperature_C",
+          "value": -16.9
+        },
+        {
+          "key": "light_lux",
+          "value": 48100
+        },
+        {
+          "key": "EC_uS",
+          "value": 4563
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.39
+        },
+        {
+          "key": "pH",
+          "value": 12.2
+        },
+        {
+          "key": "temperature_C",
+          "value": -27.6
+        },
+        {
+          "key": "light_lux",
+          "value": 144264
+        },
+        {
+          "key": "EC_uS",
+          "value": 1604
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.15
+        },
+        {
+          "key": "pH",
+          "value": 14.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 97.9
+        },
+        {
+          "key": "light_lux",
+          "value": 24448
+        },
+        {
+          "key": "EC_uS",
+          "value": 3872
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.5
+        },
+        {
+          "key": "pH",
+          "value": 6.8
+        },
+        {
+          "key": "temperature_C",
+          "value": -4.7
+        },
+        {
+          "key": "light_lux",
+          "value": 105130
+        },
+        {
+          "key": "EC_uS",
+          "value": 960
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.49
+        },
+        {
+          "key": "pH",
+          "value": 0.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 24.4
+        },
+        {
+          "key": "light_lux",
+          "value": 119277
+        },
+        {
+          "key": "EC_uS",
+          "value": 4673
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.27
+        },
+        {
+          "key": "pH",
+          "value": 13.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 124.2
+        },
+        {
+          "key": "light_lux",
+          "value": 145691
+        },
+        {
+          "key": "EC_uS",
+          "value": 7973
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.46
+        },
+        {
+          "key": "pH",
+          "value": 4.2
+        },
+        {
+          "key": "temperature_C",
+          "value": 119.8
+        },
+        {
+          "key": "light_lux",
+          "value": 151828
+        },
+        {
+          "key": "EC_uS",
+          "value": 8883
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.18
+        },
+        {
+          "key": "pH",
+          "value": 4.4
+        },
+        {
+          "key": "temperature_C",
+          "value": -31.7
+        },
+        {
+          "key": "light_lux",
+          "value": 124987
+        },
+        {
+          "key": "EC_uS",
+          "value": 8238
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.76
+        },
+        {
+          "key": "pH",
+          "value": 7.4
+        },
+        {
+          "key": "temperature_C",
+          "value": -30.6
+        },
+        {
+          "key": "light_lux",
+          "value": 133124
+        },
+        {
+          "key": "EC_uS",
+          "value": 1312
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.55
+        },
+        {
+          "key": "pH",
+          "value": 1.0
+        },
+        {
+          "key": "temperature_C",
+          "value": -28.8
+        },
+        {
+          "key": "light_lux",
+          "value": 61657
+        },
+        {
+          "key": "EC_uS",
+          "value": 6615
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.36
+        },
+        {
+          "key": "pH",
+          "value": 12.5
+        },
+        {
+          "key": "temperature_C",
+          "value": 0.6
+        },
+        {
+          "key": "light_lux",
+          "value": 155849
+        },
+        {
+          "key": "EC_uS",
+          "value": 651
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.86
+        },
+        {
+          "key": "pH",
+          "value": 5.9
+        },
+        {
+          "key": "temperature_C",
+          "value": 56.3
+        },
+        {
+          "key": "light_lux",
+          "value": 137044
+        },
+        {
+          "key": "EC_uS",
+          "value": 5183
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.8
+        },
+        {
+          "key": "pH",
+          "value": 2.9
+        },
+        {
+          "key": "temperature_C",
+          "value": 78.2
+        },
+        {
+          "key": "light_lux",
+          "value": 62570
+        },
+        {
+          "key": "EC_uS",
+          "value": 4351
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.19
+        },
+        {
+          "key": "pH",
+          "value": 9.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 9.5
+        },
+        {
+          "key": "light_lux",
+          "value": 82883
+        },
+        {
+          "key": "EC_uS",
+          "value": 1188
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.03
+        },
+        {
+          "key": "pH",
+          "value": 8.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 52.9
+        },
+        {
+          "key": "light_lux",
+          "value": 26209
+        },
+        {
+          "key": "EC_uS",
+          "value": 1200
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.61
+        },
+        {
+          "key": "pH",
+          "value": 7.1
+        },
+        {
+          "key": "temperature_C",
+          "value": -18.1
+        },
+        {
+          "key": "light_lux",
+          "value": 91490
+        },
+        {
+          "key": "EC_uS",
+          "value": 1127
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.64
+        },
+        {
+          "key": "pH",
+          "value": 5.2
+        },
+        {
+          "key": "temperature_C",
+          "value": -14.0
+        },
+        {
+          "key": "light_lux",
+          "value": 142401
+        },
+        {
+          "key": "EC_uS",
+          "value": 4956
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.84
+        },
+        {
+          "key": "pH",
+          "value": 13.8
+        },
+        {
+          "key": "temperature_C",
+          "value": 67.9
+        },
+        {
+          "key": "light_lux",
+          "value": 2050
+        },
+        {
+          "key": "EC_uS",
+          "value": 9086
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.9
+        },
+        {
+          "key": "pH",
+          "value": 9.3
+        },
+        {
+          "key": "temperature_C",
+          "value": 114.9
+        },
+        {
+          "key": "light_lux",
+          "value": 35203
+        },
+        {
+          "key": "EC_uS",
+          "value": 4333
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.35
+        },
+        {
+          "key": "pH",
+          "value": 1.5
+        },
+        {
+          "key": "temperature_C",
+          "value": 51.3
+        },
+        {
+          "key": "light_lux",
+          "value": 71394
+        },
+        {
+          "key": "EC_uS",
+          "value": 4616
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.81
+        },
+        {
+          "key": "pH",
+          "value": 10.0
+        },
+        {
+          "key": "temperature_C",
+          "value": -6.4
+        },
+        {
+          "key": "light_lux",
+          "value": 166261
+        },
+        {
+          "key": "EC_uS",
+          "value": 4325
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.52
+        },
+        {
+          "key": "pH",
+          "value": 3.5
+        },
+        {
+          "key": "temperature_C",
+          "value": 109.8
+        },
+        {
+          "key": "light_lux",
+          "value": 13316
+        },
+        {
+          "key": "EC_uS",
+          "value": 1512
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.9
+        },
+        {
+          "key": "pH",
+          "value": 11.6
+        },
+        {
+          "key": "temperature_C",
+          "value": -32.7
+        },
+        {
+          "key": "light_lux",
+          "value": 87439
+        },
+        {
+          "key": "EC_uS",
+          "value": 2143
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.91
+        },
+        {
+          "key": "pH",
+          "value": 3.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 82.3
+        },
+        {
+          "key": "light_lux",
+          "value": 144619
+        },
+        {
+          "key": "EC_uS",
+          "value": 7007
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.68
+        },
+        {
+          "key": "pH",
+          "value": 1.6
+        },
+        {
+          "key": "temperature_C",
+          "value": 115.9
+        },
+        {
+          "key": "light_lux",
+          "value": 181146
+        },
+        {
+          "key": "EC_uS",
+          "value": 2442
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.64
+        },
+        {
+          "key": "pH",
+          "value": 11.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 56.1
+        },
+        {
+          "key": "light_lux",
+          "value": 38821
+        },
+        {
+          "key": "EC_uS",
+          "value": 7041
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.38
+        },
+        {
+          "key": "pH",
+          "value": 4.3
+        },
+        {
+          "key": "temperature_C",
+          "value": 108.3
+        },
+        {
+          "key": "light_lux",
+          "value": 10458
+        },
+        {
+          "key": "EC_uS",
+          "value": 5862
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.63
+        },
+        {
+          "key": "pH",
+          "value": 3.5
+        },
+        {
+          "key": "temperature_C",
+          "value": -23.0
+        },
+        {
+          "key": "light_lux",
+          "value": 146770
+        },
+        {
+          "key": "EC_uS",
+          "value": 6658
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.92
+        },
+        {
+          "key": "pH",
+          "value": 10.5
+        },
+        {
+          "key": "temperature_C",
+          "value": 112.8
+        },
+        {
+          "key": "light_lux",
+          "value": 62059
+        },
+        {
+          "key": "EC_uS",
+          "value": 2662
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.93
+        },
+        {
+          "key": "pH",
+          "value": 11.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 105.4
+        },
+        {
+          "key": "light_lux",
+          "value": 6497
+        },
+        {
+          "key": "EC_uS",
+          "value": 2938
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.21
+        },
+        {
+          "key": "pH",
+          "value": 4.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 113.6
+        },
+        {
+          "key": "light_lux",
+          "value": 175612
+        },
+        {
+          "key": "EC_uS",
+          "value": 4065
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.8
+        },
+        {
+          "key": "pH",
+          "value": 11.0
+        },
+        {
+          "key": "temperature_C",
+          "value": -22.2
+        },
+        {
+          "key": "light_lux",
+          "value": 10151
+        },
+        {
+          "key": "EC_uS",
+          "value": 7711
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.67
+        },
+        {
+          "key": "pH",
+          "value": 11.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 36.0
+        },
+        {
+          "key": "light_lux",
+          "value": 80003
+        },
+        {
+          "key": "EC_uS",
+          "value": 3728
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.67
+        },
+        {
+          "key": "pH",
+          "value": 9.2
+        },
+        {
+          "key": "temperature_C",
+          "value": 25.7
+        },
+        {
+          "key": "light_lux",
+          "value": 73034
+        },
+        {
+          "key": "EC_uS",
+          "value": 1137
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.9
+        },
+        {
+          "key": "pH",
+          "value": 3.9
+        },
+        {
+          "key": "temperature_C",
+          "value": 65.8
+        },
+        {
+          "key": "light_lux",
+          "value": 104773
+        },
+        {
+          "key": "EC_uS",
+          "value": 8785
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.99
+        },
+        {
+          "key": "pH",
+          "value": 0.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 104.7
+        },
+        {
+          "key": "light_lux",
+          "value": 68475
+        },
+        {
+          "key": "EC_uS",
+          "value": 2925
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.74
+        },
+        {
+          "key": "pH",
+          "value": 13.8
+        },
+        {
+          "key": "temperature_C",
+          "value": -33.7
+        },
+        {
+          "key": "light_lux",
+          "value": 156387
+        },
+        {
+          "key": "EC_uS",
+          "value": 7119
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.04
+        },
+        {
+          "key": "pH",
+          "value": 11.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 32.0
+        },
+        {
+          "key": "light_lux",
+          "value": 134066
+        },
+        {
+          "key": "EC_uS",
+          "value": 1894
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.16
+        },
+        {
+          "key": "pH",
+          "value": 8.1
+        },
+        {
+          "key": "temperature_C",
+          "value": 2.0
+        },
+        {
+          "key": "light_lux",
+          "value": 185803
+        },
+        {
+          "key": "EC_uS",
+          "value": 7144
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.01
+        },
+        {
+          "key": "pH",
+          "value": 13.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 48.8
+        },
+        {
+          "key": "light_lux",
+          "value": 188594
+        },
+        {
+          "key": "EC_uS",
+          "value": 3228
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.09
+        },
+        {
+          "key": "pH",
+          "value": 1.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 69.6
+        },
+        {
+          "key": "light_lux",
+          "value": 86559
+        },
+        {
+          "key": "EC_uS",
+          "value": 5143
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.99
+        },
+        {
+          "key": "pH",
+          "value": 1.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 108.5
+        },
+        {
+          "key": "light_lux",
+          "value": 132939
+        },
+        {
+          "key": "EC_uS",
+          "value": 5067
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.0
+        },
+        {
+          "key": "pH",
+          "value": 4.6
+        },
+        {
+          "key": "temperature_C",
+          "value": 75.0
+        },
+        {
+          "key": "light_lux",
+          "value": 145335
+        },
+        {
+          "key": "EC_uS",
+          "value": 2085
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.58
+        },
+        {
+          "key": "pH",
+          "value": 9.3
+        },
+        {
+          "key": "temperature_C",
+          "value": 22.6
+        },
+        {
+          "key": "light_lux",
+          "value": 196118
+        },
+        {
+          "key": "EC_uS",
+          "value": 2851
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.85
+        },
+        {
+          "key": "pH",
+          "value": 4.2
+        },
+        {
+          "key": "temperature_C",
+          "value": 50.4
+        },
+        {
+          "key": "light_lux",
+          "value": 106
+        },
+        {
+          "key": "EC_uS",
+          "value": 4978
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.86
+        },
+        {
+          "key": "pH",
+          "value": 6.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 55.7
+        },
+        {
+          "key": "light_lux",
+          "value": 171627
+        },
+        {
+          "key": "EC_uS",
+          "value": 5279
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.39
+        },
+        {
+          "key": "pH",
+          "value": 6.2
+        },
+        {
+          "key": "temperature_C",
+          "value": -4.7
+        },
+        {
+          "key": "light_lux",
+          "value": 124042
+        },
+        {
+          "key": "EC_uS",
+          "value": 2780
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.98
+        },
+        {
+          "key": "pH",
+          "value": 4.0
+        },
+        {
+          "key": "temperature_C",
+          "value": 69.5
+        },
+        {
+          "key": "light_lux",
+          "value": 162335
+        },
+        {
+          "key": "EC_uS",
+          "value": 5491
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.28
+        },
+        {
+          "key": "pH",
+          "value": 13.3
+        },
+        {
+          "key": "temperature_C",
+          "value": -1.2
+        },
+        {
+          "key": "light_lux",
+          "value": 81374
+        },
+        {
+          "key": "EC_uS",
+          "value": 3680
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.42
+        },
+        {
+          "key": "pH",
+          "value": 2.1
+        },
+        {
+          "key": "temperature_C",
+          "value": -32.4
+        },
+        {
+          "key": "light_lux",
+          "value": 124554
+        },
+        {
+          "key": "EC_uS",
+          "value": 1193
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.37
+        },
+        {
+          "key": "pH",
+          "value": 12.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 55.0
+        },
+        {
+          "key": "light_lux",
+          "value": 188310
+        },
+        {
+          "key": "EC_uS",
+          "value": 6291
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.48
+        },
+        {
+          "key": "pH",
+          "value": 3.4
+        },
+        {
+          "key": "temperature_C",
+          "value": 68.2
+        },
+        {
+          "key": "light_lux",
+          "value": 1453
+        },
+        {
+          "key": "EC_uS",
+          "value": 1746
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 2.34
+        },
+        {
+          "key": "pH",
+          "value": 3.1
+        },
+        {
+          "key": "temperature_C",
+          "value": 92.7
+        },
+        {
+          "key": "light_lux",
+          "value": 182429
+        },
+        {
+          "key": "EC_uS",
+          "value": 8486
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.39
+        },
+        {
+          "key": "pH",
+          "value": 7.8
+        },
+        {
+          "key": "temperature_C",
+          "value": 111.4
+        },
+        {
+          "key": "light_lux",
+          "value": 31813
+        },
+        {
+          "key": "EC_uS",
+          "value": 7478
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.4
+        },
+        {
+          "key": "pH",
+          "value": 6.5
+        },
+        {
+          "key": "temperature_C",
+          "value": 47.6
+        },
+        {
+          "key": "light_lux",
+          "value": 146518
+        },
+        {
+          "key": "EC_uS",
+          "value": 9755
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 0.95
+        },
+        {
+          "key": "pH",
+          "value": 10.6
+        },
+        {
+          "key": "temperature_C",
+          "value": 33.0
+        },
+        {
+          "key": "light_lux",
+          "value": 188553
+        },
+        {
+          "key": "EC_uS",
+          "value": 8270
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.28
+        },
+        {
+          "key": "pH",
+          "value": 12.7
+        },
+        {
+          "key": "temperature_C",
+          "value": 33.6
+        },
+        {
+          "key": "light_lux",
+          "value": 41722
+        },
+        {
+          "key": "EC_uS",
+          "value": 7777
+        },
+        {
+          "key": "contamination_flag",
+          "value": false
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "key": "OD680",
+          "value": 1.35
+        },
+        {
+          "key": "pH",
+          "value": 10.5
+        },
+        {
+          "key": "temperature_C",
+          "value": 98.6
+        },
+        {
+          "key": "light_lux",
+          "value": 72695
+        },
+        {
+          "key": "EC_uS",
+          "value": 8540
+        },
+        {
+          "key": "contamination_flag",
+          "value": true
+        }
+      ]
+    }
+]
